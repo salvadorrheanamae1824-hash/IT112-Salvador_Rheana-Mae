@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    printf("^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n");
+    printf("|                                  |\n");
+    printf("|       WELCOME TO C CODING!       |\n");
+    printf("|                                  |\n");
+    printf("|      Think - Code - Create       |\n");
+    printf("|                                  |\n");
+    printf("^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n");
+
+    return 0;
+}
