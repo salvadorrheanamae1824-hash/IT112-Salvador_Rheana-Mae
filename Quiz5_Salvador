@@ -41,8 +41,6 @@ int main() {
 }
 
 
-
-
 ====================================
        DAILY SAVINGS TRACKER
 ====================================
@@ -61,3 +59,6 @@ Total Savings: PHP 645.00
 Daily Average: PHP 92.14
 Status: GOAL REACHED!
 ====================================
+
+
+...Program finished with exit code 0
