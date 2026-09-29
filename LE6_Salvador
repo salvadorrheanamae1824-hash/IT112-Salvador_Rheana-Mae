@@ -1,0 +1,139 @@
+#include <stdio.h>
+
+// Functions for operations
+float add(float a, float b) {
+    return a + b;
+}
+
+float subtract(float a, float b) {
+    return a - b;
+}
+
+float multiply(float a, float b) {
+    return a * b;
+}
+
+float divide(float a, float b) {
+    if (b == 0) {
+        printf("Error: Division by zero is not allowed.\n");
+        return 0;
+    }
+    return a / b;
+}
+
+int main() {
+    float num1, num2, result;
+    int choice;
+
+    do {
+        // Ask user input
+        printf("\nEnter first number: ");
+        scanf("%f", &num1);
+
+        printf("Enter second number: ");
+        scanf("%f", &num2);
+
+        // Menu
+        printf("\nChoose an operation:\n");
+        printf("1. Addition\n");
+        printf("2. Subtraction\n");
+        printf("3. Multiplication\n");
+        printf("4. Division\n");
+        printf("5. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        // Perform operation
+        switch (choice) {
+            case 1:
+                result = add(num1, num2);
+                printf("Result: %.2f\n", result);
+                break;
+            case 2:
+                result = subtract(num1, num2);
+                printf("Result: %.2f\n", result);
+                break;
+            case 3:
+                result = multiply(num1, num2);
+                printf("Result: %.2f\n", result);
+                break;
+            case 4:
+                result = divide(num1, num2);
+                if (num2 != 0)
+                    printf("Result: %.2f\n", result);
+                break;
+            case 5:
+                printf("Exiting program...\n");
+                break;
+            default:
+                printf("Invalid choice. Please try again.\n");
+        }
+
+    } while (choice != 5); // Repeat until user chooses exit
+
+    return 0;
+}
+
+Enter first number: 24
+Enter second number: 18
+
+Choose an operation:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Exit
+Enter your choice: 1
+Result: 42.00
+
+Enter first number: 24
+Enter second number: 18
+
+Choose an operation:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Exit
+Enter your choice: 2
+Result: 6.00
+
+Enter first number: 24
+Enter second number: 18
+
+Choose an operation:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Exit
+Enter your choice: 3
+Result: 432.00
+
+Enter first number: 24
+Enter second number: 18
+
+Choose an operation:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Exit
+Enter your choice: 4
+Result: 1.33
+
+Enter first number: 24
+Enter second number: 18
+
+Choose an operation:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Exit
+Enter your choice: 5
+Exiting program...
+
+
+...Program finished with exit code 0
+
